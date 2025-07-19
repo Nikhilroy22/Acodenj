@@ -31,8 +31,7 @@ jobs:
         fi
 
     - name: Build Cordova Android App
-      run: cordova build android --verbose
-
+      run: yarn build free prod
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
